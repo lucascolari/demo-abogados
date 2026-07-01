@@ -131,15 +131,15 @@ svg { display: block; }
 .hero {
   position: relative; overflow: hidden;
   background:
-    radial-gradient(1100px 520px at 85% -10%, rgba(200,164,92,0.22), transparent),
-    radial-gradient(900px 500px at 0% 110%, rgba(200,164,92,0.10), transparent),
-    linear-gradient(160deg, #123152, var(--navy) 45%, var(--navy-deep));
+    radial-gradient(1100px 520px at 85% -10%, rgba(200,164,92,0.20), transparent) center/cover no-repeat,
+    linear-gradient(115deg, rgba(12,33,54,0.94) 0%, rgba(15,41,66,0.86) 52%, rgba(10,31,51,0.92) 100%) center/cover no-repeat,
+    var(--navy-deep) url('img/hero.webp') center/cover no-repeat;
   padding: 5.5rem 0 5rem;
 }
 .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: linear-gradient(90deg, var(--gold-2), var(--gold), var(--gold-2)); }
 .hero-watermark {
   position: absolute; right: -70px; bottom: -110px; width: 540px; height: 540px;
-  color: var(--gold); opacity: 0.10; pointer-events: none;
+  color: var(--gold); opacity: 0.05; pointer-events: none;
 }
 .hero-watermark svg { width: 100%; height: 100%; }
 .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.4fr 0.9fr; gap: 3rem; align-items: center; }
